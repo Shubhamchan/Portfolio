@@ -34,7 +34,7 @@ document.getElementById("contactForm").addEventListener("submit", async function
     const BASE_URL = "http://localhost:3000"; // FIXED: Use HTTP
 
     try {
-        let response = await fetch(`${BASE_URL}/submit`, {
+        let response = await fetch(`${window.location.origin}/submit`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(formData)
