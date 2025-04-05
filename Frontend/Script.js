@@ -31,7 +31,7 @@ document.getElementById("contactForm").addEventListener("submit", async function
         message: document.getElementById("message").value
     };
 
-    const BASE_URL = "http://localhost:3000"; // FIXED: Use HTTP
+    const BASE_URL = "https://portfolio-shubham2.vercel.app/"; // FIXED: Use HTTP
 
     try {
         let response = await fetch(`${BASE_URL}/submit`, {
