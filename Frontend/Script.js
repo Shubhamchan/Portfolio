@@ -20,3 +20,32 @@ menuIcon.onclick = () =>{
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
 }
+document.getElementById("contactForm").addEventListener("submit", async function (event) {
+    event.preventDefault();
+
+    let formData = {
+        fullName: document.getElementById("fullName").value,
+        email: document.getElementById("email").value,
+        phone: document.getElementById("phone").value,
+        subject: document.getElementById("subject").value,
+        message: document.getElementById("message").value
+    };
+
+    const BASE_URL = "http://localhost:3000"; // FIXED: Use HTTP
+
+    try {
+        let response = await fetch(`${BASE_URL}/submit`, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(formData)
+        });
+
+        if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+
+        let result = await response.json();
+        alert(result.message);
+    } catch (error) {
+        console.error("Error sending data:", error);
+        alert("Failed to send data. Check console for details.");
+    }
+});
