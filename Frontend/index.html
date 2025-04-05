@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+      <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+        <header class="header">
+          <a href="#home" class="logo">Shubham <span>Kumar</span></a>
+          <i class='bx bx-menu' id="menu-icon"></i>
+          <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#education">Education</a>
+            <a href="#services">Services</a>
+            <a href="#Projects">Projects</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </header>
+        <section class="home" id="home">
+          <div class="home-content">                     
+            <h1>Hi,It's <span>Shubham</span></h1>
+            <h3 class="text-animation">
+              I'm a <span class="role"></span>
+            </h3>
+            <p class="text">I'm a software developer and here is my portfolio website. Here you'll learn about my journey as a software developer.</p>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/shubham-kumar-a5672625a/" target=”_blank”><i class='bx bxl-linkedin'></i></a>
+              <a href="https://github.com/Shubhamchan" target=”_blank”><i class='bx bxl-github'></i></a>
+              <a href="https://codeforces.com/profile/ShubhamKumar29" target="_blank">
+                <img src="./assets/codeoforces.png"/>
+              </a>
+            </div>
+            <div class="btn-group">
+              <a href="#contact" class="btn">Hire</a>
+              <a href="https://drive.google.com/file/d/1qee0ynZpobzA5__GC2Ua8o8mlH3mJFwN/view?usp=drive_link" class="btn" target=”_blank”>Download CV</a>
+            </div>
+          </div>
+            <div class="home-img">
+              <img src="./assets/Personal image.jpg" alt="Image" class="self-">
+            </div>
+        </section>
+        <section class="education" id="education">
+          <h2 class="heading">Education</h2>
+          <div class="timeline-items">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+               <div class="timeline-date">2020</div>
+               <div class="timeline-content">
+                <h3>10th</h3>
+                <p>I have completed my 10th grade from Ichchha Public School(CBSE board),and i secured 87.8% marks.</p>
+               </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+               <div class="timeline-date">2022</div>
+               <div class="timeline-content">
+                <h3>High School(12th class)</h3>
+                <p>I successfully completed my 12th grade from R P S School (CBSE board) with a commendable score of 90%. I ranked among the top 20 students in my school's 12th-grade results.</p>
+               </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+               <div class="timeline-date">2022</div>
+               <div class="timeline-content">
+                <h3>University</h3>
+                <p>Currently, I'm  Pursuing B-tech from Civil Engineering Department at IIT BHU.</p>
+               </div>
+              </div>
+          </div>
+        </section>
+        <section class="services" id="services">
+          <h2 class="heading">Services</h2>
+          <div class="services-container">
+              <div class="service-box">
+                <div class="service-info">
+               <h4>Frontend Development</h4>
+               <p>Skilled in frontend development, experienced in building responsive, interactive web applications using HTML, CSS, JavaScript, and modern frameworks to deliver seamless user experiences and optimized performance.</p>
+              </div>
+           </div>
+           <div class="service-box">
+            <div class="service-info">
+           <h4>Backend Development</h4>
+           <p>Experienced in backend development,proficient in building and maintaining server-side applications using technologies like Node.js, Express,MongoDB, and databases to ensure efficient data handling and robust performance.</p>
+          </div>
+       </div>
+       <div class="service-box">
+        <div class="service-info">
+       <h4>Software Development</h4>
+       <p>Experienced in software development, skilled in designing scalable applications,and solved over 500+ problems in data structures and algorithms,enhancing problem-solving and coding proficiency.</p>
+      </div>
+   </div>
+      </div>
+        </section>
+        <section class="project" id="Projects">
+          <div class="project-box">
+             <h2 class="heading">Recent Project</h2>
+               <div class="wrapper">
+                  <div class="project-item">
+                    <img src="./assets/Project1.png" alt="">
+                      <h2>Parallax Effect</h2>
+                      <p>Created Parallax Effect on Adventure Trip using the basic concept of Html and CSS.In this project the basic of html is used.</p>
+                      <a href="https://github.com/Shubhamchan/Parallax-effect.git" target=”_blank”><i class='bx bxl-github shubham'></i></a>
+                  </div>
+                  <div class="project-item">
+                    <img src="./assets/project2.png" alt="">
+                      <h2>Simmon Game</h2>
+                      <p>It is Game which is based on to choose the correct color box,if you choose the right color box then level is up otherwise level fail.This game is Created using only Html,CSS and Javascript.</p>
+                      <a href="https://github.com/Shubhamchan/Simmon-Game.git" target=”_blank” ><i class='bx bxl-github shubham'></i></a>
+                  </div>
+                  <div class="project-item">
+                    <img src="./assets/Wether App.png" alt="">
+                      <h2>Weather App</h2>
+                      <p>Give real-time Weather Data using API integration,Location-based Forecasts using GPS location entry</p>
+                      <a href="https://github.com/Shubhamchan/Weatherapp.git" target=”_blank” ><i class='bx bxl-github shubham'></i></a>
+                  </div>
+               </div>
+          </div>
+        </section>
+        <section class="contact" id="contact">
+           <h2 class="heading">Contact Me</h2>
+           <form id="contactForm">
+            <div class="input-group">
+              <div class="input-box">
+                <input type="text" id="fullName" name="fullName" placeholder="Full Name" required>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+              </div>
+              <div class="input-box">
+                <input type="number" id="phone" name="phone" placeholder="Phone Number" required>
+                <input type="text" id="subject" name="subject" placeholder="Subject" required>
+              </div>
+              <div class="input-group-2">
+                <textarea id="message" name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <input type="submit" value="Send Message" class="btn">
+              </div>
+            </div>
+          </form>
+          
+
+        </section>
+        <footer class="footer">
+           <div class="social">
+            <a href="https://www.linkedin.com/in/shubham-kumar-a5672625a/" target=”_blank”><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/Shubhamchan" target=”_blank”><i class='bx bxl-github'></i></a>
+            <a href="https://codeforces.com/profile/ShubhamKumar29" target="_blank">
+              <img src="./assets/codeoforces.png"/>
+            </a>
+          </div>
+          <ul class="list">
+            <li>
+              <a href="#">FAQ</a>
+            </li>
+            <li>
+              <a href="#services">Services</a>
+            </li>
+            <li>
+              <a href="#">About Me</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+          <p class="copyright">@ Shubham Kumar | All Right Reserved</p>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+        <script>
+          var typeData = new Typed(".role", {
+            strings: [
+              "Full Stack Developer",
+              "Web Developer",
+              "UI-UX Designer",
+              "Backend Developer",
+              "Software Developer",
+            ],
+            loop: true,
+            typeSpeed: 100,
+            backSpeed: 80,
+            backDelay: 1000,
+          });
+        </script>
+        <script src="Script.js"></script>
+</body>
+</html>
